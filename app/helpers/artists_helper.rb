@@ -1,9 +1,9 @@
 module ArtistsHelper
     def display_artist(artist)
         if artist.empty?
-            content_for :artist, artist
+            artist.artist_name
         else
-            content_for :edit, artist
+            Song.artist_name=(artist)
         end
     end
 
