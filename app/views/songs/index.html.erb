@@ -1,4 +1,4 @@
-<% display_artist @song.artist %>
+<%= display_artist @song %>
 <ul>
 <% @songs.each do |song| %>
   <li><%= link_to song.title, song_path(song) %></li>
